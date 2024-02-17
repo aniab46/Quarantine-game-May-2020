@@ -1,0 +1,25 @@
+* {margin: 0;padding: 0; }
+.body{position: relative}
+.headTitle{ background: tomato; color: darkslategray; text-align: center; }
+.headTitle h1{text-shadow: 1px 1px 2px black ;padding: 20px 0px; font-weight: 600; font-size: 50px; }
+.gameMainBody{background: url(images/backgrnd.jpg) no-repeat center center/cover; height:480px;position: relative;}
+.gameMainBody img{width: 350px; height: auto;position: absolute;bottom: -65px; left:160px;transition: 1s}
+.resultBody{background: #480e24;text-align: center;height: 480px;position: relative;}
+.resultBody .score{color: #af73e6;}
+
+.resultBody .clickBody img{position: absolute; bottom: 0;left: 100px;cursor: pointer;transition: .5s; transition-timing-function: ease-out; }
+.resultBody .clickTransition img{bottom: 200px;transform: rotate(1360deg);}
+
+.resultBody .score span{font-size: 50px;padding: 5px 60px;display: inline-block;background: #bb373196;border-radius: 20px;margin-top: 20px}
+
+#congratulation{background: url(images/cngrtln.jpg) no-repeat center center/cover; background-size: 700px auto;text-align: center;padding: 200px 300px;position: absolute;margin-top: -610px;margin-left: 200px; animation-duration:0.5s; animation-timing-function:ease-out; animation-name: congratulation; display: none}
+#congratulation h3{margin-top: 220px;color: green; font-weight: 700;font-size: 40px;animation-duration: 2s; animation-name: score; animation-timing-function: ease-out}
+
+@keyframes congratulation {
+  from {background-size: 0;}
+  to {background-size: 700px auto;}
+}
+@keyframes score{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
